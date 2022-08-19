@@ -19,4 +19,4 @@ sklearn==0.24.1
 
 
 #### Optional parameters
---dataset : default='NPInter2_55' replacement from four kinds of data sets : NPInter2_55, NPInter2_46, NPinter3.0_human_46, NPinter3.0_human_55, NPInter3.0_mouse_46, NPInter3.0_mouse_55, RPI2241_46 and RPI2241_55
+--dataset : default='NPInter2_55' replacement from four data sets : NPInter2_55, NPInter2_46, NPinter3.0_human_46, NPinter3.0_human_55, NPInter3.0_mouse_46, NPInter3.0_mouse_55, RPI2241_46 and RPI2241_55
