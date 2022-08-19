@@ -167,7 +167,7 @@ for epoch in range(1, opt['num_epoch'] + 1):
     start_time = time.time()
     for i, batch in enumerate(train_batch):
         global_step += 1
-        loss = trainer.reconstruct(UV, VU, adj, all_edges, rna_feature, protein_feature, batch)  # [ [rna_list], [protein_list], [neg_protein_list] ]
+        loss = trainer.reconstruct(UV, VU, adj, all_edges, rna_feature, protein_feature, batch) 
         train_loss += loss
     duration = time.time() - start_time
     print(format_str.format(datetime.now(), global_step, max_steps, epoch, \
@@ -176,7 +176,6 @@ for epoch in range(1, opt['num_epoch'] + 1):
 
 
 
-    # eval model
     print("Evaluating on dev set...")
 
     trainer.model.eval()
